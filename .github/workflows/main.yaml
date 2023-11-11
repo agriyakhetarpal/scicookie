@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     concurrency:
       group: ci-main-tests-${{ github.ref }}
-      cancel-in-progress: true
+      cancel-in-progress: false
 
     defaults:
       run:
